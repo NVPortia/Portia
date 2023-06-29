@@ -21,11 +21,16 @@
 # strcounter('qdw2d222')
 
 
-def strcounter(s):
-    for sym in set(s):
-        print(f'{sym} - {s.count(sym)}')
+# def strcounter(s):
+#     for sym in set(s):
+#         print(f'{sym} - {s.count(sym)}')
 
-strcounter('qdw2d222')
+# strcounter('qdw2d222')
 
-# git remote add origin https://github.com/NVPortia/NV.git
-# git branch -M main
+
+s = input()
+h = len(s) // 2
+print(s[:h] == s[:len(s)-h-1:-1])
+
+# Проверяем, равна ли первая строка половине второй, записанной в обратном порядке.
+# При условии, что в строке нечётное количество символов, тогда средний символ не участвует в проверке, поскольку не влияет на результат.
