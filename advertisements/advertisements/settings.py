@@ -82,6 +82,21 @@ DATABASES = {
     }
 }
 
+'''
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "OPTIONS": {
+            "service": "my_service",
+            "passfile": ".my_pgpass",
+        },
+    }
+}
+default - указывает на название подлючения по умолчанию
+ENGINE - отвечает за движок базы данных
+OPTIONS - дополнительный набор параметров,
+который может потребоваться при подключении к определенных базам данных.
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
